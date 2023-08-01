@@ -1,0 +1,24 @@
+.box {
+    border: 2px solid black;
+    width: 250px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+}
+
+body {
+    margin-top: 300px;
+    background-color: bisque;
+}
+
+table,
+tr,
+td {
+    padding: 10px;
+}
+
+button {
+    width: 70px;
+    height: 50px;
+    color: white;
+}

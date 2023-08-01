@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="icon" href="hi.jpg">
+    <style>
+        h1 {
+            text-align: center;
+            color: brown;
+        }
+
+        fieldset {
+            backdrop-filter: blur(5px);
+            width: 40%;
+            height: 60%;
+            background-color: rgb(141, 225, 242);
+            padding: 20px;
+        }
+
+        #Calculator {
+
+            border-radius: 2px;
+            background-color: rgb(238, 245, 244);
+            margin: auto;
+        }
+
+        #box {
+            background-color: rgb(18, 116, 190);
+            border-radius: 2px;
+
+        }
+
+        body {
+            background-image: url(bg-img.avif);
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+
+        .main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        input[type=button],
+        input[type=reset] {
+            width: 50px;
+            height: 50px;
+        }
+
+        input[type=text] {
+            width: 60%;
+            height: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <fieldset>
+            <h1>Calculator</h1>
+            <form name="number" method="post">
+                <input type="text" name="calc" id="Calculator"><br><br>
+                <input type="button" value="1" id="box" onclick="number.calc.value += '1' ">
+                <input type="button" value="2" id="box" onclick="number.calc.value += '2' ">
+                <input type="button" value="3" id="box" onclick="number.calc.value += '3' ">
+                <input type="button" value="4" id="box" onclick="number.calc.value += '4' ">
+                <input type="button" value="5" id="box" onclick="number.calc.value += '5' ">
+                <input type="button" value="+" id="box" onclick="number.calc.value += '+' "
+                    style="width: 38px;"><br><br>
+                <input type="button" value="6" id="box" onclick="number.calc.value += '6' ">
+                <input type="button" value="7" id="box" onclick="number.calc.value += '7' ">
+                <input type="button" value="8" id="box" onclick="number.calc.value += '8' ">
+                <input type="button" value="9" id="box" onclick="number.calc.value += '9' ">
+                <input type="button" value="0" id="box" onclick="number.calc.value += '0' ">
+                <input type="button" value="-" id="box" onclick="number.calc.value += '-' "
+                    style="width: 38px;"><br><br>
+                <input type="button" value="*" id="box" onclick="number.calc.value += '*' ">
+                <input type="button" value="/" id="box" onclick="number.calc.value += '/' ">
+                <input type="button" value="." id="box" onclick="number.calc.value += '.' ">
+                <input type="button" value="," id="box" onclick="number.calc.value += ',' ">
+                <input type="button" value="^" id="box" onclick="number.calc.value += '^' "
+                    style="width: 38px;"><br><br>
+                <input type="button" value="=" id="box" onclick="number.calc.value = eval(number.calc.value) "
+                    style="width: 40px;">
+                <input type="reset" id="box" style="width: 58px;">
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
